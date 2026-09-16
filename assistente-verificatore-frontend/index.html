@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Assistente Verificatore</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">AV</div>
+        <div>
+          <h1>Assistente Verificatore</h1>
+          <p><span class="dot"></span> Manuale aziendale</p>
+        </div>
+      </div>
+      <button id="clearBtn" class="ghost">Nuova chat</button>
+    </header>
+
+    <section id="chat" class="chat">
+      <div class="message assistant welcome">
+        <div class="avatar">AI</div>
+        <div class="bubble">
+          <strong>Ciao! Come posso aiutarti?</strong>
+          <p>Fai una domanda sulle procedure presenti nel manuale del verificatore.</p>
+        </div>
+      </div>
+
+      <div id="suggestions" class="suggestions">
+        <button>Quando devo inserire NSC?</button>
+        <button>Come verifico un sostegno VTR?</button>
+        <button>Come devo fare le foto?</button>
+        <button>Come si usa lo spessimetro?</button>
+      </div>
+    </section>
+
+    <form id="chatForm" class="composer">
+      <textarea id="question" rows="1" placeholder="Fai una domanda sul manuale..." autocomplete="off"></textarea>
+      <button id="sendBtn" type="submit" aria-label="Invia">➜</button>
+    </form>
+    <div class="disclaimer">Le risposte sono generate sulla base della documentazione aziendale disponibile.</div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

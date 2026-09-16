@@ -1,0 +1,9 @@
+{
+  "name": "Assistente Verificatore",
+  "short_name": "Assistente",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b1220",
+  "icons": []
+}
